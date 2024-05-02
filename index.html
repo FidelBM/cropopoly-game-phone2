@@ -41,9 +41,13 @@
     canvas.style.width = canvasWidth + "px";
     canvas.style.height = canvasHeight + "px";
     canvas.style.position = "fixed";
+    canvas.style.left = "50%";
+    canvas.style.top = "50%";
+    canvas.style.transform = "translate(-50%, -50%)";
 
     document.body.style.textAlign = "left";
 }
+
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         dataUrl: "Build/juego2.data",
